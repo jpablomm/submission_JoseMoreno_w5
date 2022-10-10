@@ -7,7 +7,7 @@ const margins = {
   right: 10,
 };
 
-d3.csv("/data/zaatari-refugee-camp-population.csv", (row) => {
+d3.csv("data/zaatari-refugee-camp-population.csv", (row) => {
   return {
     date: new Date(row.date),
     population: parseFloat(row.population),
